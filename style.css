@@ -30,6 +30,11 @@ body {
 .card:hover {
     transform: translateY(-4px);
 }
+.card h2 {
+    text-align: center;
+    width: 100%;
+}
+
 
 /* Header */
 header {
