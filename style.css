@@ -1,4 +1,4 @@
-/* Reset & Font */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    position: relative; /* needed for overlay */
+    position: relative; 
     color: #333;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,6 @@ body {
     transition: background 0.5s ease, color 0.5s ease;
 }
 
-/* Background Image with Overlay using ::before */
 body::before {
     content: "";
     position: fixed;
@@ -24,11 +23,11 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('background.jpg'); /* your main background image */
+    background-image: url('make me a background image for my portfolio website.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -2; /* behind content */
+    z-index: -2;
 }
 
 body::after {
@@ -38,22 +37,21 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.25); /* subtle dark overlay */
-    z-index: -1; /* above background but behind content */
+    background-color: rgba(0, 0, 0, 0.25); 
+    z-index: -1; 
 }
 
-/* Dark Mode Overlay */
 body.dark::after {
-    background-color: rgba(0, 0, 0, 0.55); /* stronger overlay for dark mode */
+    background-color: rgba(0, 0, 0, 0.55); 
 }
 
 body.dark::before {
-    background-image: url('background-dark.jpg'); /* optional dark version */
+    background-image: url('make me a background image for my portfolio website.jpg'); 
 }
 
 /* Card Layout */
 .card {
-    background: rgba(255, 255, 255, 0.9); /* semi-transparent white for cards */
+    background: rgba(255, 255, 255, 0.9); 
     width: 100%;
     max-width: 900px;
     border-radius: 16px;
@@ -63,20 +61,18 @@ body.dark::before {
     transition: transform 0.3s ease, background 0.5s ease;
     display: flex;
     flex-direction: column;
-    align-items: center; /* center content horizontally */
-    text-align: center;  /* center headings and text */
+    align-items: center; 
+    text-align: center;  
 }
 
 body.dark .card {
-    background: rgba(17, 24, 39, 0.9); /* semi-transparent dark for cards */
+    background: rgba(17, 24, 39, 0.9);
 }
 
-/* Hover lift effect for cards */
 .card:hover {
     transform: translateY(-4px);
 }
 
-/* Header */
 header {
     text-align: center;
 }
@@ -87,7 +83,6 @@ header {
     margin: 15px 0;
 }
 
-/* Button */
 button {
     padding: 12px 26px;
     border: none;
@@ -104,14 +99,12 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Section Headings */
 h2 {
     margin-bottom: 30px;
     font-weight: 600;
     width: 100%;
 }
 
-/* Achievements & Projects */
 .achievement-item {
     margin-bottom: 35px;
     text-align: center;
@@ -127,30 +120,25 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for images */
 .achievement-img:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* Clickable indicator */
 .clickable-img {
     cursor: pointer;
 }
 
-/* Captions */
 .caption {
     margin-top: 10px;
     font-size: 14px;
     opacity: 0.8;
 }
 
-/* Dark Mode Image Border */
 body.dark .achievement-img {
     border-color: #444;
 }
 
-/* Responsive */
 @media (max-width: 520px) {
     .achievement-img {
         width: 180px;
