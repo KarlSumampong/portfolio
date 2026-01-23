@@ -25,7 +25,10 @@ body {
     margin-bottom: 40px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
-    text-align: center; /* Ensure headings are centered */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures everything is centered horizontally */
+    text-align: center; /* Centers heading & text inside card */
 }
 
 .card:hover {
@@ -64,7 +67,7 @@ button:hover {
 h2 {
     margin-bottom: 30px;
     font-weight: 600;
-    text-align: center; /* Center all headings */
+    width: 100%;
 }
 
 /* Achievements & Projects */
