@@ -23,7 +23,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('make me a background image for my portfolio website.jpg'); 
+    background-image: url('background.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@ body.dark::after {
 }
 
 body.dark::before {
-    background-image: url('make me a background image for my portfolio website.jpg'); 
+    background-image: url('background.jpg'); 
 }
 
 /* Card Layout */
