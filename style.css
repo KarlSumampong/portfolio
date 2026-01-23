@@ -111,3 +111,21 @@ body.dark .achievement-img,
 body.dark .project-video {
     border-color: #fff;
 }
+
+/* Clickable image indicator */
+.clickable-img {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.clickable-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode hover */
+body.dark .clickable-img:hover {
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+}
+
