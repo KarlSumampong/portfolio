@@ -1,21 +1,21 @@
 /* Reset & Font */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f6f8;
     color: #333;
-    margin: 0;
-    padding: 30px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
-/* Card layout */
+/* Card Layout */
 .card {
     background: #ffffff;
     width: 100%;
@@ -25,16 +25,12 @@ body {
     margin-bottom: 40px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
+    text-align: center; /* Ensure headings are centered */
 }
 
 .card:hover {
     transform: translateY(-4px);
 }
-.card h2 {
-    text-align: center;
-    width: 100%;
-}
-
 
 /* Header */
 header {
@@ -64,10 +60,11 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Titles */
+/* Section Headings */
 h2 {
     margin-bottom: 30px;
     font-weight: 600;
+    text-align: center; /* Center all headings */
 }
 
 /* Achievements & Projects */
@@ -116,4 +113,16 @@ body.dark .card {
 
 body.dark .achievement-img {
     border-color: #444;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+    .achievement-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card {
+        padding: 20px;
+    }
 }
